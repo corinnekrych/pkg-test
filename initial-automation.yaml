@@ -1,0 +1,16 @@
+|
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: initial automation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+
+  build:
+    steps:
+      - uses: actions/checkout@v3
